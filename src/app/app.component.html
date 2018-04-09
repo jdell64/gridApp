@@ -1,0 +1,11 @@
+<div id="toolbar">
+  TOOLBAR HERE
+</div>
+
+<div id="gridParent">
+  <gridster [options]="options">
+    <gridster-item [item]="item" *ngFor="let item of dashboard" class="grid-card">
+      <ndc-dynamic [ndcDynamicComponent]="item.component"></ndc-dynamic>
+    </gridster-item>
+  </gridster>
+</div>
